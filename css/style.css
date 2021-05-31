@@ -1,0 +1,618 @@
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+/* =====================start header================== */
+header .carousel,
+header .carousel .carousel-inner {
+  width: 100%;
+  height: 100vh;
+}
+header .carousel .carousel-inner .carousel-item .content {
+  top: 0;
+  text-align: center;
+}
+header .carousel .carousel-inner .carousel-item .content h1 {
+  font-size: 73px;
+  font-weight: 700;
+  color: #fff;
+  width: 40%;
+  padding: 20px;
+  line-height: 1;
+}
+header .carousel .gif a img {
+  position: absolute;
+  bottom: 20px;
+  width: 40px;
+  height: 50px;
+}
+
+/* ==============navbar============= */
+.navbar .container .collapse .navbar-nav .nav-item a {
+  font-size: 14px;
+  color: #282828;
+  padding: 0px 15px;
+  font-weight: bold;
+}
+.navbar .container .collapse .navbar-nav .active a,
+.navbar .container .collapse .navbar-nav .nav-item:hover a {
+  color: #f25454;
+}
+/* ===Media Query=== */
+@media screen and (max-width: 992px) {
+  .navbar .container .collapse .navbar-nav {
+    box-shadow: 0px -7px 3px 0px rgb(31 31 31 / 7%);
+    margin-top: 15px;
+  }
+  .navbar .container .collapse .navbar-nav .nav-item {
+    padding: 10px 0px;
+    border-bottom: 1px solid #ccc;
+  }
+  .navbar .container .collapse .navbar-nav .nav-item a {
+    font-size: 18px;
+    font-weight: bolder;
+  }
+  .navbar .container .collapse .navbar-nav .icon {
+    display: none;
+  }
+  header .carousel .carousel-inner .carousel-item .content h1 {
+    font-size: 36px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .navbar .container .collapse .navbar-nav .nav-item a {
+    color: #ccc;
+  }
+  .carousel-control-next,
+  .carousel-control-prev {
+    display: none !important;
+  }
+  header .carousel,
+  header .carousel .carousel-inner {
+    width: 100%;
+    height: 70vh;
+  }
+  header .carousel .carousel-inner .carousel-item .content h1 {
+    font-size: 25px;
+    padding: 0px;
+  }
+}
+/* ==================side setting bar================ */
+.setting {
+  width: 250px;
+  position: fixed;
+  background-color: white;
+  top: 25%;
+  padding: 15px;
+  border-radius: 2px;
+  z-index: 5;
+  left: -250px;
+  transition: all 1s;
+}
+.setting:hover {
+  left: 0px;
+}
+.setting .icon {
+  right: -55px;
+  top: -15px;
+  padding: 10px 10px;
+  cursor: pointer;
+}
+.setting h3 {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 10px;
+  font-weight: bolder;
+}
+.setting ul {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 15px;
+}
+.setting ul li a {
+  text-decoration: none;
+  color: #808080;
+  font-size: 14px;
+}
+.setting .colors span {
+  width: 25px;
+  height: 25px;
+  margin-right: 3px;
+  border-radius: 2px;
+}
+.setting .colors span.one {
+  background-color: #f25454;
+  cursor: pointer;
+}
+.setting .colors span.two {
+  background-color: #4e9cb5;
+  cursor: pointer;
+}
+.setting .colors span.three {
+  background-color: #24bca4;
+  cursor: pointer;
+}
+.setting .colors span.four {
+  background-color: #46cad7;
+  cursor: pointer;
+}
+.setting .colors span.five {
+  background-color: #c86f98;
+  cursor: pointer;
+}
+.setting .colors span.six {
+  background-color: #ee8f67;
+  cursor: pointer;
+}
+.setting .colors span.seven {
+  background-color: #e4d20c;
+  cursor: pointer;
+}
+.setting .colors span.eight {
+  background-color: #6b978f;
+  cursor: pointer;
+}
+
+/* =====================end header================== */
+
+/* =====================start About Us================== */
+section .container .about .content p {
+  font-size: 15px;
+  color: #666;
+  margin-bottom: 10px;
+}
+section .container .about .row .bar .heading {
+  font-size: 14px;
+  color: #444;
+  font-weight: 600;
+}
+section .container .about .row .bar .hd80 {
+  width: 80%;
+}
+section .container .about .row .bar .hd95 {
+  width: 95%;
+}
+section .container .about .row .bar .hd85 {
+  width: 85%;
+}
+section .container .about .row .bar .hd70 {
+  width: 70%;
+}
+section .container .about .row .bar .progress {
+  height: 4px;
+  background-color: #eee;
+}
+
+/* =================The Animation============= */
+
+section .container .about .row .bar .heading .value80 {
+  animation: value80 4s ease-in-out;
+}
+@keyframes value80 {
+  0% {
+    visibility: hidden;
+  }
+  50% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+section .container .about .row .bar .heading .value95 {
+  animation: value95 4s ease-in-out;
+}
+@keyframes value95 {
+  0% {
+    visibility: hidden;
+  }
+  50% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+section .container .about .row .bar .heading .value85 {
+  animation: value85 4s ease-in-out;
+}
+@keyframes value85 {
+  0% {
+    visibility: hidden;
+  }
+  50% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+section .container .about .row .bar .heading .value70 {
+  animation: value70 4s ease-in-out;
+}
+@keyframes value70 {
+  0% {
+    visibility: hidden;
+  }
+  50% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+section .container .about .row .bar .progress div.Branding {
+  animation: branding 2s ease-in-out;
+}
+@keyframes branding {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 80%;
+  }
+}
+section .container .about .row .bar .progress div.Web {
+  animation: Web 2s ease-in-out;
+}
+@keyframes Web {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 95%;
+  }
+}
+section .container .about .row .bar .progress div.Graphic {
+  animation: Graphic 2s ease-in-out;
+}
+@keyframes Graphic {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 85%;
+  }
+}
+section .container .about .row .bar .progress div.Development {
+  animation: Development 2s ease-in-out;
+}
+@keyframes Development {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 70%;
+  }
+}
+/* =====================end About Us================== */
+
+/* =====================start Our Team================== */
+
+section .team .the-card .overllay {
+  background-color: rgba(242, 84, 84, 0.7);
+  top: 0;
+  opacity: 0;
+}
+section .team .img:hover .overllay {
+  opacity: 1;
+}
+section .team .the-card .img {
+  overflow: hidden;
+}
+section .team .the-card .overllay,
+section .team .the-card .img img {
+  transition: all 0.3s ease-in-out;
+}
+section .team .img:hover img {
+  transform: scale(1.1);
+}
+section .team .overllay .items a {
+  padding: 15px;
+  color: #fff;
+  font-size: 16px;
+}
+section .team .the-card .details h5 {
+  font-size: 16px;
+  color: #282828;
+  font-weight: 600;
+}
+section .team .the-card .details h5:hover {
+  color: #f25454;
+}
+section .team .the-card .details span {
+  font-size: 14px;
+  color: #666;
+}
+section .q-info h3 {
+  font-size: 32px;
+  color: #282828;
+  font-weight: 600;
+}
+section .q-info button {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 15px 27px;
+}
+/* =====================end Our Team================== */
+
+/* =====================start Services================== */
+section .container .services .content h3 {
+  font-size: 19px;
+  color: #282828;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+section .container .services .content h3:hover {
+  color: #f25454;
+}
+section .container .services .content p {
+  font-size: 14px;
+  color: #666;
+}
+section .container .services .content i {
+  color: #f25454;
+  font-size: 30px;
+  margin-right: 15px;
+}
+/* =====================end Services================== */
+
+/* ===============start client reviews=============== */
+
+.review .carousel-indicators {
+  margin: 0px auto 75px;
+  width: 100%;
+}
+.review .carousel-indicators li.active {
+  width: 130px;
+  height: 130px;
+  background-color: transparent;
+  text-align: center;
+  padding: 0;
+}
+.review .carousel-indicators li {
+  width: 120px;
+  height: 120px;
+  background-color: transparent;
+  text-align: center;
+  text-indent: 0;
+  cursor: pointer;
+  padding: 10px;
+}
+.review .carousel-indicators li.active .img {
+  width: 100%;
+  opacity: 1;
+}
+.review .carousel-indicators li .img {
+  width: 100%;
+  opacity: 0.7;
+}
+.review .carousel-indicators li .img img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.review .carousel-indicators li.active .content {
+  text-indent: 0;
+  margin-top: 20px;
+  visibility: visible;
+}
+.review .carousel-indicators li .content {
+  text-indent: 0;
+  margin-top: 20px;
+  visibility: hidden;
+}
+.review .carousel-indicators li .content h3 {
+  color: #282828;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+.review .carousel-indicators li .content span {
+  color: #666;
+  font-size: 14px;
+}
+
+.review .carousel-inner .carousel-item .carousel-caption p {
+  font-size: 25px;
+  font-weight: 600;
+  color: #666;
+  padding: 0px 15px;
+  margin-bottom: 10px;
+}
+/* ===============end client reviews=============== */
+
+/* ===============start Get In Touch=============== */
+.contact .info h3 {
+  color: #282828;
+  font-size: 32px;
+  margin-bottom: 30px;
+  font-weight: 600;
+  line-height: 1.1;
+}
+.contact .info .row {
+  padding: 25px 0px;
+}
+.contact .info .row i {
+  color: #f25454;
+  font-size: 40px;
+}
+.contact .info .row .content h4 {
+  color: #282828;
+  font-size: 18px;
+  font-weight: bold;
+}
+.contact .info .row .content h4:hover {
+  color: #f25454;
+}
+.contact .info .row .content p {
+  color: #666;
+  font-size: 14px;
+}
+.contact form input,
+.contact form textarea {
+  width: 100%;
+  padding: 14px 18px;
+  border: 2.5px solid #eee;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #a6a6a6;
+  background-color: #fff;
+  font-size: 15px;
+  margin-bottom: 16px;
+  outline: none;
+  border-radius: 3px;
+}
+.contact form button {
+  letter-spacing: 1px;
+  outline: none;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 13px 25px;
+  font-weight: 700;
+}
+/* ===============end Get In Touch=============== */
+
+/* ===============start footer =============== */
+.footer {
+  width: 100%;
+  background-image: url(../images/footer/dotted-map.png);
+  background-size: 100% 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: #222;
+  position: relative;
+}
+.footer .container .row .content h5 {
+  font-size: 20px;
+  color: #fff;
+  margin: 10px 0px 20px;
+  font-weight: 600;
+}
+.footer .container .row .content p,
+.footer .container .row .content ul li a {
+  font-size: 14px;
+  color: #b0b0b0;
+  text-decoration: none;
+}
+.footer .container .row .content p {
+  padding: 0px 45px 0px 0px;
+  margin-left: 0;
+  width: 70%;
+}
+.footer .container .row .content ul li a:hover {
+  color: #f25454;
+}
+.footer .container .row .content button {
+  border-color: #b0b0b0;
+  font-size: 14px;
+  margin: 0px 8px 8px 0px;
+  padding: 2px 10px;
+  color: #b0b0b0;
+  border-radius: 3px;
+}
+.footer .container .row .content button:hover {
+  border-color: #f25454;
+  color: #f25454;
+  background-color: transparent;
+}
+/* ===============end footer =============== */
+
+/* =============== Top Icon ========== */
+.footer div.icon {
+  width: 100%;
+  top: -30px;
+  left: 0;
+  position: absolute;
+}
+div.top-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: #f25454;
+  border-radius: 50%;
+  margin: auto;
+  opacity: 0.7;
+}
+div.top-icon i {
+  color: #fff;
+  font-size: 30px;
+}
+/* =============== End Top Icon ========== */
+.bottom {
+  background-color: #1a1a1a;
+}
+.bottom .container .icons {
+  display: flex;
+  padding-left: 0;
+}
+.bottom .container .icons a {
+  color: #fff;
+}
+.bottom .container .icons a:hover {
+  color: #f25454;
+}
+.bottom .container p {
+  font-size: 15px;
+  font-weight: 400;
+  color: #b0b0b0;
+  line-height: 16px;
+  margin: 0;
+}
+.bottom .container p span {
+  color: #fff;
+  font-weight: 600;
+}
+/* ======the section header==========  */
+.section-header {
+  text-align: center;
+  width: 70%;
+  margin: 20px auto 70px;
+  padding-top: 15px;
+}
+
+.section-header h2 {
+  position: relative;
+  margin-bottom: 20px;
+  font-size: 38px;
+  line-height: 38px;
+  font-weight: 700;
+  text-transform: none;
+}
+.section-header h2::before {
+  content: attr(data-letter);
+  position: absolute;
+  font-size: 2em;
+  opacity: 0.06;
+  top: -13px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-transform: uppercase;
+}
+.section-header .line {
+  width: 45px;
+  height: 1px;
+  background-color: #000;
+  margin: 0px auto 20px;
+  transition: all 0.5s;
+}
+.section-header h2:hover + .line {
+  width: 65px;
+}
+.section-header p {
+  font-size: 18px;
+  color: #999;
+  padding: 0px 25px;
+}
+
+.bg-grey {
+  background-color: #fafafa;
+}
